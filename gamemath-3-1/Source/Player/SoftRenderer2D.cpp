@@ -84,6 +84,28 @@ void SoftRenderer::Render2D()
 
 	// 렌더링 로직의 로컬 변수
 
+	// 밝은 회색의 선을 사용해 평행한 벡터를 표현
+	static float lineLength = 500.f;
+	Vector2 lineStart = currentPosition * lineLength;
+	Vector2 lineEnd = currentPosition * -lineLength;
+	r.DrawLine(lineStart, lineEnd, LinearColor::LightGray);
+
+	// 벡터를 파란색 픽셀로 표현
+	r.DrawPoint(currentPosition, LinearColor::Blue);
+	r.DrawPoint(currentPosition + Vector2::UnitX, LinearColor::Blue);
+	r.DrawPoint(currentPosition - Vector2::UnitX, LinearColor::Blue);
+	r.DrawPoint(currentPosition + Vector2::UnitY, LinearColor::Blue);
+	r.DrawPoint(currentPosition - Vector2::UnitY, LinearColor::Blue);
+
+	r.DrawPoint(currentPosition + Vector2::One, LinearColor::Blue);
+	r.DrawPoint(currentPosition - Vector2::One, LinearColor::Blue);
+
+	r.DrawPoint(currentPosition + Vector2(1.f, -1.f), LinearColor::Blue);
+	r.DrawPoint(currentPosition - Vector2(1.f, -1.f), LinearColor::Blue);
+
+	// 벡터의 현재 좌표를 우상단에 출력
+	r.PushStatisticText("Coordinate : " + currentPosition.ToString());
+
 }
 
 // 메시를 그리는 함수
