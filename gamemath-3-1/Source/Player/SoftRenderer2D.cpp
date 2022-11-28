@@ -85,7 +85,7 @@ void SoftRenderer::Render2D()
 	// 렌더링 로직의 로컬 변수
 
 	// 밝은 회색의 선을 사용해 평행한 벡터를 표현
-	static float lineLength = 500.f;
+	static float lineLength = 1.f;
 	Vector2 lineStart = currentPosition * lineLength;
 	Vector2 lineEnd = currentPosition * -lineLength;
 	r.DrawLine(lineStart, lineEnd, LinearColor::LightGray);
