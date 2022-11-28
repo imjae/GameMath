@@ -65,7 +65,7 @@ void SoftRenderer::Update2D(float InDeltaSeconds)
 	// 게임 로직의 로컬 변수
 	static float moveSpeed = 100.f;
 
-	Vector2 inputVector = Vector2(input.GetAxis(InputAxis::XAxis), input.GetAxis(InputAxis::YAxis));
+	Vector2 inputVector = Vector2(input.GetAxis(InputAxis::XAxis), input.GetAxis(InputAxis::YAxis)).GetNormalize();
 	Vector2 deltaPosition = inputVector * moveSpeed * InDeltaSeconds;
 
 	// 물체의 최종 상태 설정
@@ -83,7 +83,34 @@ void SoftRenderer::Render2D()
 	DrawGizmo2D();
 
 	// 렌더링 로직의 로컬 변수
+	static float radius = 50.f;
+	static std::vector<Vector2> circles;
 
+	// 최초 한번 반지름보다 긴 벡터를 모아 컨테이너에 담는다.
+	if (circles.empty())
+	{
+		for (float x = -radius; x <= radius; ++x)
+		{
+			for (float y = -radius; y <= radius; ++y)
+			{
+				Vector2 pointToTest = Vector2(x, y);
+				float squaredLength = pointToTest.SizeSquared();
+				if (squaredLength <= radius * radius)
+				{
+					circles.push_back(Vector2(x, y));
+				}
+			}
+		}
+	}
+
+	// 원을 구성하는 벡터를 모두 붉은색으로 표시한다.
+	for (auto const& v : circles)
+	{
+		r.DrawPoint(v + currentPosition, LinearColor::Red);
+	}
+
+	// 원의 중심 좌표를 우 상단에 출력
+	r.PushStatisticText("Coordinate : " + currentPosition.ToString());
 }
 
 // 메시를 그리는 함수
