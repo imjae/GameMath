@@ -95,6 +95,7 @@ void SoftRenderer::Render2D()
 			{
 				Vector2 pointToTest = Vector2(x, y);
 				float squaredLength = pointToTest.SizeSquared();
+
 				if (squaredLength <= radius * radius)
 				{
 					circles.push_back(Vector2(x, y));
