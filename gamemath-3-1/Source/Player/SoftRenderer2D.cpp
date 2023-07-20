@@ -103,6 +103,7 @@ void SoftRenderer::Render2D()
 	r.DrawPoint(currentPosition + Vector2(1.f, -1.f), LinearColor::Blue);
 	r.DrawPoint(currentPosition - Vector2(1.f, -1.f), LinearColor::Blue);
 
+
 	// 벡터의 현재 좌표를 우상단에 출력
 	r.PushStatisticText("Coordinate : " + currentPosition.ToString());
 
