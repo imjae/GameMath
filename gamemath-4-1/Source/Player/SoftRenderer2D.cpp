@@ -53,7 +53,8 @@ void SoftRenderer::LoadScene2D()
 }
 
 // 게임 로직과 렌더링 로직이 공유하는 변수
-
+Vector2 currentPosition;
+float currentScale = 10.f;
 
 // 게임 로직을 담당하는 함수
 void SoftRenderer::Update2D(float InDeltaSeconds)
@@ -63,7 +64,18 @@ void SoftRenderer::Update2D(float InDeltaSeconds)
 	const InputManager& input = g.GetInputManager();
 
 	// 게임 로직의 로컬 변수
+	static float moveSpeed = 100.f;
+	static float scaleMin = 5.f;
+	static float scaleMax = 20.f;
+	static float scaleSpeed = 20.f;
 
+	Vector2 inputVector = Vector2(input.GetAxis(InputAxis::XAxis), input.GetAxis(InputAxis::YAxis)).GetNormalize();
+	Vector2 deltaPosition = inputVector * moveSpeed * InDeltaSeconds;
+	float deltaScale = input.GetAxis(InputAxis::ZAxis) * scaleSpeed * InDeltaSeconds;
+
+	// 물체의 최종 상태 설정
+	currentPosition += deltaPosition;
+	currentScale = Math::Clamp(currentScale * deltaScale, scaleMin, scaleMax);
 }
 
 // 렌더링 로직을 담당하는 함수
@@ -86,9 +98,15 @@ void SoftRenderer::Render2D()
 	{
 		for (rad = 0.f; rad < Math::TwoPI; rad += increment)
 		{
-			// 하트 방정식
-			// x와 y를 구하기.
-			// hearts.push_back(Vector2(x, y));
+			float sin = sinf(rad);
+			float cos = cosf(rad);
+			float cos2 = cosf(2 * rad);
+			float cos3 = cosf(3 * rad);
+			float cos4 = cosf(4 * rad);
+
+			float x = 16.f * sin * sin * sin;
+			float y = 13 * cos - 5 * cos2 - 2 * cos3 - cos4;
+			hearts.push_back(Vector2(x, y));
 		}
 	}
 
