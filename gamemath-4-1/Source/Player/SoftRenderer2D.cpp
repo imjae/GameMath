@@ -112,7 +112,7 @@ void SoftRenderer::Render2D()
 
 	for (auto const& v : hearts)
 	{
-		r.DrawPoint(v * 10.f, LinearColor::Blue);
+		r.DrawPoint(v * currentScale + currentPosition, LinearColor::Blue);
 	}
 }
 
