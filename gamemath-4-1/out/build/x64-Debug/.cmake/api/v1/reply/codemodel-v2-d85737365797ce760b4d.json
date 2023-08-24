@@ -1,0 +1,195 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Source/Runtime/Math",
+					"jsonFile" : "directory-Source.Runtime.Math-Debug-1112d498634f11a43ff7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Source/Runtime/Math",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Source/Runtime/Renderer",
+					"jsonFile" : "directory-Source.Runtime.Renderer-Debug-2da280b61c52bfe7017f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Source/Runtime/Renderer",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Source/Runtime/Engine",
+					"jsonFile" : "directory-Source.Runtime.Engine-Debug-17c7805a86568de57ebf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Source/Runtime/Engine",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Source/Player",
+					"jsonFile" : "directory-Source.Player-Debug-b4a623e99b83fe83b071.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "Source/Player",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SoftRenderer4-1"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "MathModule",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "RendererModule",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "EngineModule",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "SoftRendererPlayer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "EngineModule::@5a7fbfd6e89386e64f00",
+					"jsonFile" : "target-EngineModule-Debug-b019750bf837db7f6925.json",
+					"name" : "EngineModule",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "MathModule::@f761a79db46c0041bb14",
+					"jsonFile" : "target-MathModule-Debug-a214dc528c95c9893d20.json",
+					"name" : "MathModule",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "RendererModule::@2ab814afe0c860879a9f",
+					"jsonFile" : "target-RendererModule-Debug-e9b77336b5e8e522b482.json",
+					"name" : "RendererModule",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "SoftRendererPlayer::@179efd2142735ad747e4",
+					"jsonFile" : "target-SoftRendererPlayer-Debug-2cb1278fee54f2e2ed6d.json",
+					"name" : "SoftRendererPlayer",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/dev/GameMath/gamemath-4-1/out/build/x64-Debug",
+		"source" : "D:/dev/GameMath/gamemath-4-1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

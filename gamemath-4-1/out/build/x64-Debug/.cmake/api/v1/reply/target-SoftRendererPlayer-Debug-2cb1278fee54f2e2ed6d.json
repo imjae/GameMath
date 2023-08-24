@@ -1,0 +1,432 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "D:/dev/GameMath/gamemath-4-1/Output/Windows/Binary/SoftRendererPlayer.exe"
+		},
+		{
+			"path" : "D:/dev/GameMath/gamemath-4-1/Output/Windows/Binary/SoftRendererPlayer.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"Source/Player/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+				},
+				{
+					"fragment" : "-std:c++17"
+				},
+				{
+					"fragment" : "/Yc\"Precompiled.h\""
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 0,
+					"define" : "PLATFORM_WINDOWS"
+				},
+				{
+					"backtrace" : 0,
+					"define" : "Windows"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Player"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Player/Private/Windows"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Math/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Engine/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Renderer/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Renderer/Public/Windows"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+				},
+				{
+					"fragment" : "-std:c++17"
+				},
+				{
+					"fragment" : "/Yu\"Precompiled.h\""
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 0,
+					"define" : "PLATFORM_WINDOWS"
+				},
+				{
+					"backtrace" : 0,
+					"define" : "Windows"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Player"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Player/Private/Windows"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Math/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Engine/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Renderer/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Renderer/Public/Windows"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				5,
+				6,
+				9
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DWIN32 -D_DEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 0,
+					"define" : "PLATFORM_WINDOWS"
+				},
+				{
+					"backtrace" : 0,
+					"define" : "Windows"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Player"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Player/Private/Windows"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Math/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Engine/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Renderer/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/dev/GameMath/gamemath-4-1/Source/Runtime/Renderer/Public/Windows"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				13
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "RendererModule::@2ab814afe0c860879a9f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "MathModule::@f761a79db46c0041bb14"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "EngineModule::@5a7fbfd6e89386e64f00"
+		}
+	],
+	"id" : "SoftRendererPlayer::@179efd2142735ad747e4",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:windows",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\..\\..\\Output\\Windows\\Library\\MathModule.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\..\\..\\Output\\Windows\\Library\\RendererModule.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\..\\..\\Output\\Windows\\Library\\EngineModule.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\..\\..\\Output\\Windows\\Library\\RendererModule.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\..\\..\\Output\\Windows\\Library\\MathModule.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "SoftRendererPlayer",
+	"nameOnDisk" : "SoftRendererPlayer.exe",
+	"paths" : 
+	{
+		"build" : "Source/Player",
+		"source" : "Source/Player"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"name" : "Private",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"name" : "Private\\Windows\\Res",
+			"sourceIndexes" : 
+			[
+				8,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"name" : "Private\\Windows",
+			"sourceIndexes" : 
+			[
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Source/Player/Precompiled.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Source/Player/Precompiled.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Source/Player/Private/SystemInputManager.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Source/Player/SoftRenderer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Source/Player/SoftRenderer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Source/Player/SoftRenderer2D.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Source/Player/SoftRenderer3D.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Source/Player/SystemInputManager.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Source/Player/Private/Windows/Res/resource.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Source/Player/Private/Windows/WindowsApp.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Source/Player/Private/Windows/WindowsPlayer.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Source/Player/Private/Windows/WindowsUtil.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Source/Player/Private/Windows/Res/player.ico",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 2,
+			"path" : "Source/Player/Private/Windows/Res/player.rc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Source/Player/Private/Windows/Res/player_small.ico",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}
